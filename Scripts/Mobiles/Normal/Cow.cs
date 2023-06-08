@@ -10,9 +10,9 @@ namespace Server.Mobiles
 
         [Constructable]
         public Cow()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a cow";
+            Name = $"a {m_Gender} cow";
             Body = Utility.RandomList(0xD8, 0xE7);
             BaseSoundID = 0x78;
 

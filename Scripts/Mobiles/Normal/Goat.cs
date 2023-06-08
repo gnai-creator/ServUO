@@ -10,9 +10,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public Goat()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a goat";
+            Name = $"a {m_Gender}  goat";
             Body = 0xD1;
             BaseSoundID = 0x99;
 

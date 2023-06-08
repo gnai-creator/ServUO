@@ -5,9 +5,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public GreyWolf()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a grey wolf";
+            Name = $"a {m_Gender}  grey wolf";
             Body = Utility.RandomList(25, 27);
             BaseSoundID = 0xE5;
 

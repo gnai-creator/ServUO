@@ -203,7 +203,16 @@ namespace Server.Mobiles
 
     public class BaseCreature : Mobile, IHonorTarget, IEngravable
     {
-        public const int MaxLoyalty = 100;
+
+		public int PregCounter = 0;
+		public int PregTimeLimit = 400;
+		public int DefaultLifeSpan = 1800 + Utility.Random(1800);
+		public int Lifespan = 1800 + Utility.Random(1800);
+		public string m_Gender { get; set; }
+
+		public bool m_Pregmant { get; set; }
+
+		public const int MaxLoyalty = 100;
 
         private bool _LockDirection;
 
@@ -2142,9 +2151,9 @@ namespace Server.Mobiles
         public BaseCreature(
             AIType ai, FightMode mode, int iRangePerception, int iRangeFight, double dActiveSpeed, double dPassiveSpeed)
         {
+			m_Gender = Utility.Random(10) > 5 ? "male" : "female";
             PhysicalDamage = 100;
-
-            CanMove = true;
+			CanMove = true;
 
             ApproachWait = false;
             ApproachRange = 10;
@@ -3111,7 +3120,10 @@ namespace Server.Mobiles
                 case AIType.AI_Necro:
                     m_AI = new NecroAI(this);
                     break;
-            }
+				case AIType.AI_Animal:
+					m_AI = new AnimalAI(this);
+					break;
+			}
         }
 
         public void ChangeAIToDefault()

@@ -5,7 +5,7 @@ namespace Server.Mobiles
     {
         [Constructable]
         public Bird()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
             if (Utility.RandomBool())
             {
@@ -14,13 +14,13 @@ namespace Server.Mobiles
                 switch (Utility.Random(3))
                 {
                     case 0:
-                        Name = "a crow";
+                        Name = $"a {m_Gender} crow";
                         break;
                     case 2:
-                        Name = "a raven";
+                        Name = $"a {m_Gender} raven";
                         break;
                     case 1:
-                        Name = "a magpie";
+                        Name = $"a {m_Gender} magpie";
                         break;
                 }
             }

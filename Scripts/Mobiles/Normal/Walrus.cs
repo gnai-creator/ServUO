@@ -5,9 +5,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public Walrus()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a walrus";
+            Name = $"a {m_Gender} walrus";
             Body = 0xDD;
             BaseSoundID = 0xE0;
 

@@ -3,11 +3,11 @@ namespace Server.Mobiles
     [CorpseName("a squirrel corpse")]
     public class Squirrel : BaseCreature
     {
-        [Constructable]
-        public Squirrel()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+		[Constructable]
+		public Squirrel()
+			: base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a squirrel";
+            Name = $"a {m_Gender} squirrel";
             Body = 0x116;
 
             SetStr(44, 50);

@@ -18,9 +18,11 @@ namespace Server.Mobiles
 
         [Constructable]
         public Horse(string name)
-            : base(name, 0xE2, 0x3EA0, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(name, 0xE2, 0x3EA0, AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            int random = Utility.Random(4);
+			Name = $"a {m_Gender} horse";
+
+			int random = Utility.Random(4);
 
             Body = m_IDs[random * 2];
             ItemID = m_IDs[random * 2 + 1];

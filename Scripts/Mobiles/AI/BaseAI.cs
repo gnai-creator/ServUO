@@ -35,7 +35,10 @@ namespace Server.Mobiles
         AI_Spellweaving,
         AI_Mystic,
         AI_Paladin,
-        AI_Necro
+        AI_Necro,
+		AI_Berserk,
+		AI_Animal
+
     }
 
     public enum ActionType
@@ -53,7 +56,6 @@ namespace Server.Mobiles
         public Timer m_Timer;
         protected ActionType m_Action;
         private long m_NextStopGuard;
-
         public BaseCreature m_Mobile;
 
         /// <summary>

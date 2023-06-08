@@ -5,9 +5,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public Snake()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a snake";
+            Name = $"a {m_Gender} snake";
             Body = 52;
             Hue = Utility.RandomSnakeHue();
             BaseSoundID = 0xDB;

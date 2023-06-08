@@ -5,9 +5,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public BullFrog()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a bull frog";
+            Name = $"a {m_Gender} bull frog";
             Body = 81;
             Hue = Utility.RandomList(0x5AC, 0x5A3, 0x59A, 0x591, 0x588, 0x57F);
             BaseSoundID = 0x266;

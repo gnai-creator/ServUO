@@ -705,6 +705,7 @@ namespace Server.Misc
                     }
                 }
             }
+			AddSkillBall();
         }
 
         private static void EquipItem(Item item)
@@ -725,7 +726,12 @@ namespace Server.Misc
                 item.Delete();
         }
 
-        private static void PackItem(Item item)
+		private static void AddSkillBall()
+		{
+			PackItem(new SkillBallPlus());
+		}
+
+		private static void PackItem(Item item)
         {
             Container pack = m_Mobile.Backpack;
 
@@ -845,6 +851,8 @@ namespace Server.Misc
 
             return item;
         }
+
+		
 
         private static void AddSkillItems(SkillName skill, Mobile m)
         {

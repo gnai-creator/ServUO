@@ -11,9 +11,9 @@ namespace Server.Mobiles
         private DateTime m_NextWoolTime;
         [Constructable]
         public Sheep()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a sheep";
+            Name = $"a {m_Gender} sheep";
             Body = 0xCF;
             BaseSoundID = 0xD6;
 

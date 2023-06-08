@@ -13,7 +13,9 @@ namespace Server.Mobiles
         public DesertOstard(string name)
             : base(name, 0xD2, 0x3EA3, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            BaseSoundID = 0x270;
+			Name = $"a {m_Gender} desert ostard";
+
+			BaseSoundID = 0x270;
 
             SetStr(94, 170);
             SetDex(56, 75);

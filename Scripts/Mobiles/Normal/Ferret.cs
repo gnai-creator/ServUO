@@ -16,9 +16,9 @@ namespace Server.Mobiles
 
         [Constructable]
         public Ferret()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a ferret";
+            Name = $"a {m_Gender} ferret";
             Body = 0x117;
 
             SetStr(41, 48);

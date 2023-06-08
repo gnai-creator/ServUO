@@ -5,9 +5,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public GrizzlyBear()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a grizzly bear";
+            Name = $"a {m_Gender}  grizzly bear";
             Body = 212;
             BaseSoundID = 0xA3;
 

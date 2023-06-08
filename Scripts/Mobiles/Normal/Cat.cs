@@ -5,9 +5,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public Cat()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a cat";
+            Name = $"a {m_Gender} cat";
             Body = 0xC9;
             Hue = Utility.RandomAnimalHue();
             BaseSoundID = 0x69;

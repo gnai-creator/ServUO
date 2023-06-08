@@ -8,9 +8,11 @@ namespace Server.Mobiles
     {
         [Constructable]
         public FireBeetle()
-            : base("a fire beetle", 0xA9, 0x3E95, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+            : base("a fire beetle", 0xA9, 0x3E95, AIType.AI_Animal, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            SetStr(300);
+			Name = $"a {m_Gender} fire beetle";
+
+			SetStr(300);
             SetDex(100);
             SetInt(500);
 

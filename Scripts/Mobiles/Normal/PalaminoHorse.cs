@@ -9,9 +9,11 @@ namespace Server.Mobiles
         }
 
         [Constructable]
-        public Palomino(string name) : base(name, 1408, 0x3ECD, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        public Palomino(string name) : base(name, 1408, 0x3ECD, AIType.AI_Animal, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            BaseSoundID = 0xA8;
+			Name = $"a {m_Gender} horse";
+
+			BaseSoundID = 0xA8;
 
             SetStr(55, 98);
             SetDex(56, 75);

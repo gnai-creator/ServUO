@@ -18,7 +18,9 @@ namespace Server.Mobiles
         public CuSidhe(string name)
             : base(name, 277, 0x3E91, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            double chance = Utility.RandomDouble() * 23301;
+			Name = $"a {m_Gender} cu sidhe";
+
+			double chance = Utility.RandomDouble() * 23301;
 
             if (chance <= 1)
                 Hue = 0x489;

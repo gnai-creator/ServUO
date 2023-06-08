@@ -7,9 +7,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public GiantSerpent()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a giant serpent";
+            Name = $"a {m_Gender}  giant serpent";
             Body = 0x15;
             Hue = Utility.RandomSnakeHue();
             BaseSoundID = 219;

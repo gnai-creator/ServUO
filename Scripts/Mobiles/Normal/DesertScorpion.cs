@@ -5,9 +5,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public DesertScorpion()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, .2, .4)
+            : base(AIType.AI_Animal, FightMode.Closest, 10, 1, .2, .4)
         {
-            Name = "a desert scorpion";
+            Name = $"a {m_Gender} desert scorpion";
             Body = 0x2CD;
             BaseSoundID = 397;
 

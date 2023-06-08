@@ -11,9 +11,9 @@ namespace Server.Mobiles
         }
 
         [Constructable]
-        public Turkey(bool tamable) : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+        public Turkey(bool tamable) : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a turkey";
+            Name = $"a {m_Gender} turkey";
             Body = 95;
             BaseSoundID = 0x66A;
 

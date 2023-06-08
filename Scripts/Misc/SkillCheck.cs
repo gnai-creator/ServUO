@@ -248,7 +248,7 @@ namespace Server.Misc
             gc += (1.0 - chance) * (success ? 0.5 : 0.0);
             gc /= 2;
 
-            gc *= skill.Info.GainFactor;
+            gc *= skill.Info.GainFactor * ((from.Hunger > 10 && from.Hunger < 16) ? 2.5 : 0.9 ) * (from.Thirst > 15 ? 1.15 : 1.0);
 
             if (gc < 0.01)
                 gc = 0.01;

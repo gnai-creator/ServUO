@@ -7,9 +7,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public IceSerpent()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a giant ice serpent";
+            Name = $"a {m_Gender} giant ice serpent";
             Body = 89;
             BaseSoundID = 219;
 

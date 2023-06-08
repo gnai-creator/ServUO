@@ -20,9 +20,11 @@ namespace Server.Mobiles
 
         [Constructable]
         public Beetle(string name)
-            : base(name, 0x317, 0x3EBC, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.25, 0.5)
+            : base(name, 0x317, 0x3EBC, AIType.AI_Animal, FightMode.Closest, 10, 1, 0.25, 0.5)
         {
-            SetStr(300);
+
+			Name = $"a {m_Gender} giant beetle";
+			SetStr(300);
             SetDex(100);
             SetInt(500);
 

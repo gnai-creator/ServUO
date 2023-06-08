@@ -6664,6 +6664,9 @@ namespace Server
 		}
 
 		#region Say/SayTo/Emote/Whisper/Yell
+
+		public void PublicEmote(string text, int hue) => PublicOverheadMessage(MessageType.Emote, hue, false, text);
+
 		public void SayTo(Mobile to, bool ascii, string text)
 		{
 			PrivateOverheadMessage(MessageType.Regular, m_SpeechHue, ascii, text, to.NetState);

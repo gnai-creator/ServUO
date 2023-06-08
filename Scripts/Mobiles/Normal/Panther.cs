@@ -5,9 +5,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public Panther()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a panther";
+            Name = $"a {m_Gender} panther";
             Body = 0xD6;
             Hue = 0x901;
             BaseSoundID = 0x462;

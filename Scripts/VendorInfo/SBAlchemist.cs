@@ -1,6 +1,7 @@
 using Server.Engines.Quests;
 using Server.Items;
 using System.Collections.Generic;
+using Xanthos.ShrinkSystem;
 
 namespace Server.Mobiles
 {
@@ -24,7 +25,8 @@ namespace Server.Mobiles
         {
             public InternalBuyInfo(Mobile m)
             {
-                Add(new GenericBuyInfo(typeof(RefreshPotion), 15, 10, 0xF0B, 0, true));
+				Add(new GenericBuyInfo(typeof(PetLeash), 150, 10, 0xF0F, 0, true));
+				Add(new GenericBuyInfo(typeof(RefreshPotion), 15, 10, 0xF0B, 0, true));
                 Add(new GenericBuyInfo(typeof(AgilityPotion), 15, 10, 0xF08, 0, true));
                 Add(new GenericBuyInfo(typeof(NightSightPotion), 15, 10, 0xF06, 0, true));
                 Add(new GenericBuyInfo(typeof(LesserHealPotion), 15, 10, 0xF0C, 0, true));

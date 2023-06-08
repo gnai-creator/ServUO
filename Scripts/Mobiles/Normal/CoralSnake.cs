@@ -5,9 +5,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public CoralSnake()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a coral snake";
+            Name = $"a {m_Gender} coral snake";
             Body = 52;
             Hue = 0x21;
             BaseSoundID = 0xDB;

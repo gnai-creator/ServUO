@@ -11,9 +11,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public IronBeetle()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.25, 0.5)
+            : base(AIType.AI_Animal, FightMode.Closest, 10, 1, 0.25, 0.5)
         {
-            Name = "an iron beetle";
+            Name = $"a {m_Gender}  iron beetle";
             Body = 714;
             BaseSoundID = 397;
 

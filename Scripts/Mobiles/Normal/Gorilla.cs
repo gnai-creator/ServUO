@@ -5,9 +5,9 @@ namespace Server.Mobiles
     {
         [Constructable]
         public Gorilla()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a gorilla";
+            Name = $"a {m_Gender}  gorilla";
             Body = 0x1D;
             BaseSoundID = 0x9E;
 
