@@ -205,9 +205,9 @@ namespace Server.Mobiles
     {
 
 		public int PregCounter = 0;
-		public int PregTimeLimit = 400;
-		public int DefaultLifeSpan = 1800 + Utility.Random(1800);
-		public int Lifespan = 1800 + Utility.Random(1800);
+		public int PregTimeLimit = 500;
+		public int DefaultLifeSpan = 2000 + Utility.Random(1800);
+		public int Lifespan = 2000 + Utility.Random(1800);
 		public string m_Gender { get; set; }
 
 		public bool m_Pregmant { get; set; }
